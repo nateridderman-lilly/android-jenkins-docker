@@ -1,5 +1,5 @@
 # Jenkins comes with JDK8
-FROM jenkins/jenkins:lts
+FROM jenkins/jnlp-slave
 
 ENV ANDROID_SDK_ZIP sdk-tools-linux-3859397.zip
 ENV ANDROID_SDK_ZIP_URL https://dl.google.com/android/repository/$ANDROID_SDK_ZIP
