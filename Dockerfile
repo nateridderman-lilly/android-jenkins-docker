@@ -44,6 +44,7 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN chown -R jenkins:jenkins /opt/android-sdk-linux/
+RUN chmod -R 777 /opt/android-sdk-linux/
 
 USER jenkins
 
