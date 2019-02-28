@@ -43,6 +43,8 @@ RUN apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 zlib1g:i386 -y
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN chown -R jenkins:jenkins /opt/android-sdk-linux/
+
 USER jenkins
 
 # List desired Jenkins plugins here
