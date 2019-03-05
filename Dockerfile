@@ -5,12 +5,12 @@ ENV ANDROID_SDK_ZIP sdk-tools-linux-3859397.zip
 ENV ANDROID_SDK_ZIP_URL https://dl.google.com/android/repository/$ANDROID_SDK_ZIP
 ENV ANDROID_HOME /opt/android-sdk-linux
 
-ENV GRADLE_ZIP gradle-4.4-bin.zip
+ENV GRADLE_ZIP gradle-4.10.1-all.zip
 ENV GRADLE_ZIP_URL https://services.gradle.org/distributions/$GRADLE_ZIP
 
 ENV PATH $PATH:$ANDROID_HOME/tools/bin
 ENV PATH $PATH:$ANDROID_HOME/platform-tools
-ENV PATH $PATH:/opt/gradle-4.4/bin
+ENV PATH $PATH:/opt/gradle-4.10.1/bin
 
 USER root
 
