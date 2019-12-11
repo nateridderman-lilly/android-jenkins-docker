@@ -33,6 +33,10 @@ RUN unzip -q /opt/$ANDROID_SDK_ZIP -d $ANDROID_HOME && \
 RUN	echo y | sdkmanager platform-tools \
 	"build-tools;27.0.1" \
 	"platforms;android-27" \
+	"build-tools;28.0.3" \
+	"platforms;android-28" \
+	"build-tools;29.0.2" \
+	"platforms;android-29" \
 	"extras;android;m2repository" && \
 	chown -R jenkins $ANDROID_HOME
 
